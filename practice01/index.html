@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 01</title>
+    <script>
+        function biggerWords(my_string, my_array) {
+            var min_length=my_string.length;
+            var this_word='';
+            var output=[];
+            for (var i=0; i<my_array.length; i++) {
+                this_word=my_array[i];
+                if (this_word.length>min_length) {
+                    output.push(this_word);
+                }
+            }
+            return output;
+        }
+        var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];
+        var result=biggerWords('whales', myArray);
+        console.log(result);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
